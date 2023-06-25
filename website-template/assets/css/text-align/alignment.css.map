@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"alignment.css"}
+{"version":3,"sources":["alignment.scss","alignment.css"],"names":[],"mappings":"AAAA;EACI,gBAAA;ACCJ;;ADCA;EACI,iBAAA;ACEJ;;ADAA;EACI,kBAAA;ACGJ;;ADDA;EACI,mBAAA;ACIJ;;ADFA;EACI,mBAAA;ACKJ;;ADHA;EACI,mBAAA;ACMJ","file":"alignment.css"}
