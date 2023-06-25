@@ -1,3 +1,20 @@
-@mixin button{
-     
+@mixin yellow-button{
+     background-color: $yellow;
+     color: $black;
+     font-weight: 600;
+     padding: 5px;
+     text-align: center;
+     width: 93px;
+     height: 100%;
+     font-family: inherit;
+}
+@mixin black-button{
+     background-color: $black;
+     color: $white;
+     font-weight: 600;
+     padding: 5px;
+     text-align: center;
+     width: 161px;
+     height: 40px;
+     font-family: inherit;
 }
