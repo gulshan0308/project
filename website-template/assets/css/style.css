@@ -1,6 +1,28 @@
-@import url(./variables/variable.css);
 @import url(./export/mixin.css);
 @import url(./grid/grid.css);
 @import url(./spacing/spacing.css);
 @import url(./text-align/alignment.css);
-@import url(./styleing/styleing.css);/*# sourceMappingURL=style.css.map */
+@import url(./styleing/styleing.css);
+.bg-wheat {
+  background-color: #f8f8f8;
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+.bg-yellow {
+  background-color: #ffbb38;
+}
+
+.border-red {
+  border-color: red;
+}
+
+.text-red {
+  color: red;
+}
+
+header {
+  background-color: #8e8e8e;
+}/*# sourceMappingURL=style.css.map */
