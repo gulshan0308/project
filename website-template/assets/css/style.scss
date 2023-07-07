@@ -1,3 +1,142 @@
 @import"./grid/grid.scss";
 @import"./spacing/spacing.scss";
 @import"./text-align/alignment.scss";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+body {
+    font-family: sans-serif;
+
+    header {
+        color: #fff;
+        top: 0;
+        position: fixed;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        box-shadow: 0 4px 12px 0 rgba(0, 0, 0, .05);
+        background-color: #fff;
+
+        .head-container {
+            width: 95%;
+            margin: auto;
+
+            .row {
+                display: flex;
+                align-items: center;
+                gap: 2rem;
+
+                .search-icon {
+                    box-sizing: content-box;
+                    display: inline-block;
+                    height: 28px;
+                    width: 40px;
+                    text-align: center;
+                    padding: 8px 0 2px;
+                    background: #f5f5f6;
+                    border: 1px solid #f5f5f6;
+                    border-right: none;
+                    border-radius: 4px 0 0 4px;
+                    position: absolute;
+                    right: 46rem;
+                    color: #717288;
+                }
+
+                .logo {
+                    img {
+                        width: 7rem;
+                    }
+                }
+
+                UL {
+                    display: flex;
+                    gap: 2rem;
+
+                    li {
+                        a {
+                            font-size: 14px;
+                            letter-spacing: .3px;
+                            color: #282c3f;
+                            border-bottom: none;
+                            font-weight: 600;
+                        }
+                    }
+                }
+
+                sup {
+                    top: -0.4rem;
+                    font-size: 70%;
+                    line-height: 0;
+                    position: relative;
+                    vertical-align: baseline;
+                    color: red;
+                    margin-left: -32px;
+                    font-weight: 600;
+                }
+
+                input {
+                    width: 25rem;
+                    font-size: 14px;
+                    height: 20px;
+                    line-height: 24px;
+                    color: #949494;
+                    box-sizing: content-box;
+                    padding: 8px 10px 10px;
+                    margin: 0 50px;
+                    outline: 0;
+                    border: 1px solid #f5f5f6;
+                    border-radius: 0 4px 4px 0;
+                    border-left: 0;
+                    background: #f5f5f6;
+                }
+
+                .user-icon {
+                    a {
+                        margin: 18px;
+                        color: black;
+                    }
+
+                    .profile {
+                        color: #000;
+                        position: absolute;
+                        bottom: 9px;
+                        right: 12rem;
+                        font-size: 12px;
+                        font-weight: 700;
+                        line-height: 6px;
+                        align-items: center;
+                    }
+
+                    .wishlist {
+                        color: #000;
+                        position: absolute;
+                        bottom: 9px;
+                        right: 8rem;
+                        font-size: 12px;
+                        font-weight: 700;
+                        line-height: 6px;
+                    }
+
+                    .bag {
+                        color: #000;
+                        position: absolute;
+                        bottom: 9px;
+                        right: 85px;
+                        font-size: 12px;
+                        font-weight: 700;
+                        line-height: 6px;
+                    }
+                }
+            }
+        }
+    }
+
+    
+}
