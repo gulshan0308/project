@@ -361,11 +361,6 @@ body {
 }
 body header {
   color: #fff;
-  top: 0;
-  position: fixed;
-  right: 0;
-  left: 0;
-  z-index: 10;
   box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
   background-color: #fff;
 }
@@ -439,7 +434,7 @@ body header .head-container .row .user-icon a {
 body header .head-container .row .user-icon .profile {
   color: #000;
   position: absolute;
-  bottom: 9px;
+  top: 3rem;
   right: 12rem;
   font-size: 12px;
   font-weight: 700;
@@ -449,7 +444,7 @@ body header .head-container .row .user-icon .profile {
 body header .head-container .row .user-icon .wishlist {
   color: #000;
   position: absolute;
-  bottom: 9px;
+  top: 3rem;
   right: 8rem;
   font-size: 12px;
   font-weight: 700;
@@ -458,7 +453,7 @@ body header .head-container .row .user-icon .wishlist {
 body header .head-container .row .user-icon .bag {
   color: #000;
   position: absolute;
-  bottom: 9px;
+  top: 3rem;
   right: 85px;
   font-size: 12px;
   font-weight: 700;
