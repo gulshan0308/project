@@ -361,6 +361,11 @@ body {
 }
 body header {
   color: #fff;
+  top: 0;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 10;
   box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
   background-color: #fff;
 }
@@ -395,24 +400,14 @@ body header .head-container .row UL {
   display: flex;
   gap: 2rem;
 }
-body header .head-container .row UL li a {
+body header .head-container .row UL a {
   font-size: 14px;
   letter-spacing: 0.3px;
   color: #282c3f;
   border-bottom: none;
   font-weight: 600;
 }
-body header .head-container .row sup {
-  top: -0.4rem;
-  font-size: 70%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-  color: red;
-  margin-left: -32px;
-  font-weight: 600;
-}
-body header .head-container .row input {
+body header .head-container input {
   width: 25rem;
   font-size: 14px;
   height: 20px;
@@ -427,35 +422,73 @@ body header .head-container .row input {
   border-left: 0;
   background: #f5f5f6;
 }
-body header .head-container .row .user-icon a {
+body header .head-container .user-icon {
+  position: relative;
+}
+body header .head-container .user-icon a {
   margin: 18px;
   color: black;
 }
-body header .head-container .row .user-icon .profile {
+body header .head-container .user-icon .profile {
   color: #000;
   position: absolute;
-  top: 3rem;
+  bottom: 9px;
   right: 12rem;
   font-size: 12px;
   font-weight: 700;
   line-height: 6px;
   align-items: center;
 }
-body header .head-container .row .user-icon .wishlist {
+body header .head-container .user-icon .wishlist {
   color: #000;
   position: absolute;
-  top: 3rem;
+  bottom: 9px;
   right: 8rem;
   font-size: 12px;
   font-weight: 700;
   line-height: 6px;
 }
-body header .head-container .row .user-icon .bag {
+body header .head-container .user-icon .bag {
   color: #000;
   position: absolute;
-  top: 3rem;
+  bottom: 9px;
   right: 85px;
   font-size: 12px;
   font-weight: 700;
   line-height: 6px;
+}
+
+header ul li {
+  position: relative;
+}
+header ul li .new {
+  position: absolute;
+  position: absolute;
+  top: -6px;
+  right: -33px;
+  color: red;
+}
+
+.red {
+  color: red;
+}
+
+.drop-down {
+  display: flex;
+  position: absolute;
+  gap: 37px;
+  top: 62px;
+}
+.drop-down ul {
+  display: none !important;
+  color: #000;
+  top: 31px;
+  line-height: 25px;
+}
+
+.men-drop {
+  position: relative;
+}
+.men-drop a:hover ~ .drop-down ul {
+  display: block !important;
 }/*# sourceMappingURL=style.css.map */

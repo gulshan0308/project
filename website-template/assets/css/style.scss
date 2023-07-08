@@ -16,6 +16,11 @@ body {
 
     header {
         color: #fff;
+        top: 0;
+        position: fixed;
+        right: 0;
+        left: 0;
+        z-index: 10;
         box-shadow: 0 4px 12px 0 rgba(0, 0, 0, .05);
         background-color: #fff;
 
@@ -53,8 +58,6 @@ body {
                 UL {
                     display: flex;
                     gap: 2rem;
-
-                    li {
                         a {
                             font-size: 14px;
                             letter-spacing: .3px;
@@ -64,18 +67,6 @@ body {
                         }
                     }
                 }
-
-                sup {
-                    top: -0.4rem;
-                    font-size: 70%;
-                    line-height: 0;
-                    position: relative;
-                    vertical-align: baseline;
-                    color: red;
-                    margin-left: -32px;
-                    font-weight: 600;
-                }
-
                 input {
                     width: 25rem;
                     font-size: 14px;
@@ -93,6 +84,7 @@ body {
                 }
 
                 .user-icon {
+                    position: relative;
                     a {
                         margin: 18px;
                         color: black;
@@ -101,7 +93,7 @@ body {
                     .profile {
                         color: #000;
                         position: absolute;
-                        top: 3rem;
+                        bottom: 9px;
                         right: 12rem;
                         font-size: 12px;
                         font-weight: 700;
@@ -112,7 +104,7 @@ body {
                     .wishlist {
                         color: #000;
                         position: absolute;
-                        top: 3rem;
+                        bottom: 9px;
                         right: 8rem;
                         font-size: 12px;
                         font-weight: 700;
@@ -122,7 +114,7 @@ body {
                     .bag {
                         color: #000;
                         position: absolute;
-                        top: 3rem;
+                        bottom: 9px;
                         right: 85px;
                         font-size: 12px;
                         font-weight: 700;
@@ -134,4 +126,43 @@ body {
     }
 
     
+
+header{
+     ul{
+          li{
+               position: relative;
+               .new{
+                    position: absolute;
+                    position: absolute;
+                    top: -6px;
+                    right: -33px;
+                    color: red;
+               }
+          }
+     }
+}
+.red{
+    color: red;
+}
+.drop-down{
+    
+    display: flex;
+    position: absolute;
+    gap: 37px ;
+    top: 62px;
+  
+    ul{
+        display: none !important;
+       color: #000;
+       
+       top: 31px;
+       line-height: 25px;
+    }
+}
+
+.men-drop{
+    position: relative;
+    a:hover ~ .drop-down ul{
+        display: block !important;
+    }
 }
